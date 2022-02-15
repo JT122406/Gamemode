@@ -1,0 +1,32 @@
+name: Gamemode
+version: '${project.version}'
+main: gm.gm.Gm
+api-version: 1.17
+authors: [ JTMcQuigg ]
+description: easy gm commands
+commands:
+  gmc:
+    description: set gamemode to creative
+    usage: /<command>
+    aliases: [gmcreative]
+  gma:
+    description: set gamemode to adventure
+    usage: /<command>
+    aliases: [ gmadventure]
+  gms:
+    description: set gamemode to survival
+    usage: /<command>
+    aliases: [gmsurvival]
+  gmsp:
+    description: set gamemode to spectator
+    usage: /<command>
+    aliases: [gmspectator]
+permissions:
+  gm.gma:
+    description: allows gamemode adventure
+  gm.gmc:
+    description: allows gamemode creative
+  gm.gmsp:
+    description: allows gamemode spectator
+  gm.gms:
+    description: allows gamemode survival
