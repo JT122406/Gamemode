@@ -1,6 +1,6 @@
 name: Gamemode
 version: '${project.version}'
-main: gm.gm.Gm
+main: Gm
 api-version: 1.17
 authors: [ JTMcQuigg ]
 description: easy gm commands
@@ -12,7 +12,7 @@ commands:
   gma:
     description: set gamemode to adventure
     usage: /<command>
-    aliases: [ gmadventure]
+    aliases: [gmadventure]
   gms:
     description: set gamemode to survival
     usage: /<command>

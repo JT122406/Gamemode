@@ -1,26 +1,20 @@
-package gm.gm;
+package gm.gm
 
-import org.bukkit.Bukkit;
-import org.bukkit.World;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.Bukkit
+import org.bukkit.plugin.java.JavaPlugin
 
-import java.awt.print.Paper;
-
-public final class Gm extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
+class Gm : JavaPlugin() {
+    override fun onEnable() {
         // Plugin startup logic
-        Bukkit.getLogger().info("Loaded Gamemode commands");
-        getCommand("gmc").setExecutor(new gmc());
-        getCommand("gmsp").setExecutor(new gmsp());
-        getCommand("gms").setExecutor(new gms());
-        getCommand("gma").setExecutor(new gma());
+        Bukkit.getLogger().info("Loaded Gamemode commands")
+        getCommand("gmc")!!.setExecutor(gmc())
+        getCommand("gmsp")!!.setExecutor(gmsp())
+        getCommand("gms")!!.setExecutor(gms())
+        getCommand("gma")!!.setExecutor(gma())
     }
 
-    @Override
-    public void onDisable() {
+    override fun onDisable() {
         // Plugin shutdown logic
-        Bukkit.getLogger().info("Disabled Gamemode");
+        Bukkit.getLogger().info("Disabled Gamemode")
     }
 }
